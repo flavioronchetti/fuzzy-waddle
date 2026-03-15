@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations | Ristorante Lago d’Oro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:wght@400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">Ristorante Lago d’Oro</a>
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a class="active" href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container reveal">
+        <h1>Reserve Your Table</h1>
+        <p>Book your dining experience and enjoy an elegant evening by Lake Como.</p>
+      </div>
+    </section>
+
+    <main class="section container reveal">
+      <form class="form" action="#" method="post">
+        <div class="form-grid">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div>
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div>
+            <label for="time">Time</label>
+            <input id="time" name="time" type="time" required />
+          </div>
+          <div>
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests" required>
+              <option value="">Select</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="notes">Special requests</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+          </div>
+          <div class="full">
+            <button class="btn btn-primary" type="submit">Confirm Reservation</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer"><div class="container">© <span id="year"></span> Ristorante Lago d’Oro</div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
