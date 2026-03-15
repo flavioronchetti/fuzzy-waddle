@@ -3,228 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flavio Ronchetti | Siti web che fanno crescere il tuo business</title>
+    <title>Officina Bianchi | Riparazioni Auto Professionali a Como</title>
     <meta
       name="description"
-      content="Flavio Ronchetti realizza siti web professionali per aziende, freelance e attività locali che vogliono ottenere più clienti online."
+      content="Officina Bianchi a Como: diagnosi elettronica, riparazione motore, impianto frenante, cambio gomme e manutenzione completa per la tua auto."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <nav class="nav container">
-        <p class="brand">Flavio Ronchetti</p>
-        <div class="nav-cta">
-          <a class="btn btn-outline" href="#processo">Metodo</a>
-          <a class="btn btn-outline" href="#contatti">Contattami</a>
-        </div>
-      </nav>
-
-      <div class="hero-content container">
-        <p class="eyebrow">Siti web su misura per la tua attività</p>
-        <h1>Trasforma visite in clienti con un sito web professionale</h1>
-        <p class="lead">
-          Creo siti web veloci, moderni e ottimizzati per la conversione, pensati per
-          valorizzare il tuo brand e generare nuove richieste ogni mese.
-        </p>
-        <p class="lead secondary">
-          Ti supporto dalla strategia iniziale fino alla pubblicazione online, con una
-          comunicazione chiara e tempi definiti, così puoi concentrarti sul tuo business.
-        </p>
-        <div class="hero-cta">
-          <a class="btn" href="#richiesta">Richiedi una consulenza gratuita</a>
-          <a class="btn btn-secondary" href="#servizi">Scopri i servizi</a>
-        </div>
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="index.html">Officina Bianchi <small>Como · Dal 2005</small></a>
+        <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="Navigazione principale">
+          <a class="active" href="index.html">Home</a>
+          <a href="servizi.html">Servizi</a>
+          <a href="chi-siamo.html">Chi siamo</a>
+          <a href="recensioni.html">Recensioni</a>
+          <a href="contatti.html">Contatti</a>
+        </nav>
       </div>
     </header>
 
     <main>
-      <section id="servizi" class="section container">
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Officina meccanica specializzata a Como</p>
+          <h1>Riparazioni Auto Professionali a Como</h1>
+          <p class="lead">
+            Da Officina Bianchi uniamo esperienza artigianale e strumenti diagnostici di ultima
+            generazione per mantenere la tua auto sicura, efficiente e pronta a ogni viaggio.
+          </p>
+          <div class="button-group">
+            <a class="btn btn-primary" href="contatti.html">Prenota un appuntamento</a>
+            <a class="btn btn-outline" href="servizi.html">Scopri tutti i servizi</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
         <h2>Servizi principali</h2>
         <p class="section-intro">
-          Soluzioni pensate per imprenditori, professionisti e attività locali che vogliono
-          una presenza digitale efficace, curata e orientata ai risultati.
+          Ci occupiamo di interventi rapidi e completi su auto benzina, diesel, ibride e flotte
+          aziendali, con ricambi selezionati e report dettagliati al termine del lavoro.
         </p>
-        <div class="grid">
+        <div class="grid services-grid">
           <article class="card">
-            <h3>Sito vetrina professionale</h3>
-            <p>
-              Perfetto per presentare la tua attività online con design premium,
-              copy persuasivo e una struttura chiara.
-            </p>
+            <span class="icon">01</span>
+            <h3>Diagnosi elettronica</h3>
+            <p>Analisi centraline, sensori e sistemi ADAS con strumenti professionali multimarche.</p>
           </article>
           <article class="card">
-            <h3>Landing page che converte</h3>
-            <p>
-              Pagine strategiche progettate per campagne social e Google Ads,
-              con obiettivo contatto o prenotazione.
-            </p>
+            <span class="icon">02</span>
+            <h3>Riparazione motore</h3>
+            <p>Interventi su distribuzione, guarnizioni, raffreddamento e prestazioni del propulsore.</p>
           </article>
           <article class="card">
-            <h3>Manutenzione e SEO tecnica</h3>
-            <p>
-              Aggiornamenti, velocità, sicurezza e ottimizzazione per posizionarti
-              meglio sui motori di ricerca.
-            </p>
+            <span class="icon">03</span>
+            <h3>Impianto frenante</h3>
+            <p>Sostituzione pastiglie/dischi, spurgo impianto e controllo ABS per massima sicurezza.</p>
+          </article>
+          <article class="card">
+            <span class="icon">04</span>
+            <h3>Cambio gomme</h3>
+            <p>Montaggio stagionale, equilibratura, convergenza e deposito pneumatici in sede.</p>
+          </article>
+          <article class="card">
+            <span class="icon">05</span>
+            <h3>Manutenzione auto</h3>
+            <p>Tagliandi completi, filtri, fluidi e check-up preventivi per ridurre guasti futuri.</p>
           </article>
         </div>
       </section>
 
-      <section id="processo" class="section section-highlight">
+      <section class="section alt">
+        <div class="container grid benefits">
+          <div>
+            <h2>I vantaggi della nostra officina</h2>
+            <p class="section-intro">
+              Ogni intervento viene pianificato in base alle esigenze reali del veicolo e condiviso
+              in modo trasparente con il cliente, senza sorprese nei costi.
+            </p>
+            <ul class="list-check">
+              <li>Preventivo dettagliato prima dei lavori.</li>
+              <li>Ricambi originali o equivalenti certificati.</li>
+              <li>Veicolo sostitutivo su prenotazione.</li>
+              <li>Garanzia sulle riparazioni effettuate.</li>
+              <li>Aggiornamenti via WhatsApp sullo stato del mezzo.</li>
+            </ul>
+          </div>
+          <article class="card">
+            <h3>Processo in 4 fasi</h3>
+            <ol>
+              <li>Accettazione e ascolto del problema.</li>
+              <li>Controllo tecnico e diagnosi approfondita.</li>
+              <li>Intervento e test su strada.</li>
+              <li>Consegna con spiegazione lavori e consigli.</li>
+            </ol>
+            <div class="badge-row">
+              <span class="badge">ISO 9001</span>
+              <span class="badge">Soccorso partner</span>
+              <span class="badge">Servizio rapido</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container">
+        <h2>Il team meccanici</h2>
+        <p class="section-intro">
+          Un gruppo di professionisti con competenze complementari: meccanica, elettronica,
+          pneumatici e accettazione clienti.
+        </p>
+        <div class="grid team">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=900&q=80" alt="Meccanico al banco motore" />
+            <h3>Marco Bianchi</h3>
+            <p>Responsabile tecnico e specialista diagnosi avanzata su motori benzina e diesel.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=80" alt="Tecnico controllo freni" />
+            <h3>Luca Riva</h3>
+            <p>Esperto impianti frenanti, sospensioni e sicurezza attiva per vetture moderne.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&w=900&q=80" alt="Addetta accettazione officina" />
+            <h3>Elena Conti</h3>
+            <p>Accettazione e customer care: pianifica tempi, ricambi e aggiornamenti al cliente.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt">
         <div class="container">
-          <h2>Come lavoro</h2>
-          <div class="process-grid">
-            <article class="process-step">
-              <span>01</span>
-              <h3>Analisi e obiettivi</h3>
-              <p>Studiamo il tuo target e definiamo gli obiettivi del sito.</p>
-            </article>
-            <article class="process-step">
-              <span>02</span>
-              <h3>Design e contenuti</h3>
-              <p>Creo una struttura chiara con testi orientati alla conversione.</p>
-            </article>
-            <article class="process-step">
-              <span>03</span>
-              <h3>Sviluppo e ottimizzazione</h3>
-              <p>Realizzo un sito veloce, responsive e pronto per essere trovato online.</p>
-            </article>
-            <article class="process-step">
-              <span>04</span>
-              <h3>Pubblicazione e supporto</h3>
-              <p>Mettiamo online il progetto e pianifichiamo evoluzioni future.</p>
-            </article>
+          <h2>Numeri che raccontano il nostro lavoro</h2>
+          <div class="grid metric-grid">
+            <div class="metric"><strong>21+</strong>Anni di esperienza locale</div>
+            <div class="metric"><strong>4.9/5</strong>Media recensioni verificate</div>
+            <div class="metric"><strong>3.500+</strong>Veicoli assistiti ogni anno</div>
+            <div class="metric"><strong>48h</strong>Tempo medio interventi ordinari</div>
           </div>
         </div>
       </section>
 
-      <section class="section container testimonials">
-        <h2>Perché scegliere me</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Comunicazione semplice</h3>
+      <section class="section container">
+        <h2>Recensioni clienti</h2>
+        <div class="grid cards-3">
+          <article class="card testimonial">
             <p>
-              Nessun tecnicismo inutile: capisci sempre a che punto siamo e cosa stiamo costruendo.
+              "Onesti, veloci e molto preparati. Mi hanno risolto un problema elettronico che altri
+              non riuscivano a individuare."
             </p>
+            <strong>Giovanni M., Como</strong>
           </article>
-          <article class="card">
-            <h3>Focus sui risultati</h3>
+          <article class="card testimonial">
             <p>
-              Ogni pagina è progettata per guidare l’utente verso il contatto o la richiesta di preventivo.
+              "Tagliando completo e cambio gomme in giornata. Servizio impeccabile e personale
+              disponibilissimo."
             </p>
+            <strong>Sara P., Cernobbio</strong>
           </article>
-          <article class="card">
-            <h3>Supporto continuativo</h3>
+          <article class="card testimonial">
             <p>
-              Resto disponibile anche dopo il lancio per miglioramenti, aggiornamenti e nuove esigenze.
+              "Spiegazioni chiare e preventivo rispettato al centesimo. Officina seria, la consiglio
+              per affidabilità e competenza."
             </p>
+            <strong>Alessandro T., Cantù</strong>
           </article>
         </div>
       </section>
 
-      <section class="section section-highlight">
-        <div class="container stats">
-          <div>
-            <p class="stat-number">+120</p>
-            <p>progetti digitali completati</p>
-          </div>
-          <div>
-            <p class="stat-number">98%</p>
-            <p>clienti soddisfatti</p>
-          </div>
-          <div>
-            <p class="stat-number">30 gg</p>
-            <p>tempo medio di consegna</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="richiesta" class="section container form-section">
-        <div class="form-box">
-          <h2>Prenota una consulenza o commissionami il lavoro</h2>
-          <p>
-            Compila il box interattivo qui sotto: al clic su “Invia richiesta” si aprirà
-            la tua casella email con i dati già compilati verso
-            <strong>flavioronchetti@libero.it</strong>.
+      <section class="section cta">
+        <div class="container">
+          <h2>Hai un rumore sospetto o una spia accesa?</h2>
+          <p class="section-intro">
+            Prenota subito un controllo: in poche ore analizziamo il problema e ti proponiamo la
+            soluzione più adatta per tornare in strada in sicurezza.
           </p>
-
-          <form id="contact-form" class="contact-form">
-            <label for="fullName">Nome e cognome</label>
-            <input id="fullName" name="fullName" type="text" required placeholder="Mario Rossi" />
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required placeholder="mario@email.it" />
-
-            <label for="requestType">Tipo richiesta</label>
-            <select id="requestType" name="requestType" required>
-              <option value="">Seleziona un'opzione</option>
-              <option value="Consulenza">Prenotare una consulenza</option>
-              <option value="Commissione">Commissionare il lavoro</option>
-            </select>
-
-            <label for="message">Messaggio</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              required
-              placeholder="Descrivi il tuo progetto, obiettivi e tempistiche"
-            ></textarea>
-
-            <button class="btn" type="submit">Invia richiesta</button>
-            <p class="form-note" id="form-note" aria-live="polite"></p>
-          </form>
+          <a class="btn btn-primary" href="contatti.html">Contattaci ora</a>
         </div>
-      </section>
-
-      <section id="contatti" class="section container contact">
-        <h2>Contatto diretto</h2>
-        <p>
-          Preferisci scrivermi subito? Puoi contattarmi direttamente qui:
-        </p>
-        <a class="btn" href="mailto:flavioronchetti@libero.it">flavioronchetti@libero.it</a>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <p>© <span id="year"></span> Flavio Ronchetti · Web Business Partner</p>
+        <p>© <span id="year"></span> Officina Bianchi · Via Milano 87, Como · +39 031 6783321</p>
       </div>
     </footer>
 
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-
-      const form = document.getElementById('contact-form');
-      const note = document.getElementById('form-note');
-
-      form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        const fullName = document.getElementById('fullName').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const requestType = document.getElementById('requestType').value;
-        const message = document.getElementById('message').value.trim();
-
-        if (!fullName || !email || !requestType || !message) {
-          note.textContent = 'Compila tutti i campi prima di inviare la richiesta.';
-          return;
-        }
-
-        const subject = encodeURIComponent(`[${requestType}] Richiesta da sito web - ${fullName}`);
-        const body = encodeURIComponent(
-          `Nome e cognome: ${fullName}\nEmail: ${email}\nTipo richiesta: ${requestType}\n\nMessaggio:\n${message}`
-        );
-
-        note.textContent = 'Apertura della tua casella email in corso...';
-        window.location.href = `mailto:flavioronchetti@libero.it?subject=${subject}&body=${body}`;
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
