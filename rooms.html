@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooms | Hotel Vista Lago</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Hotel Vista Lago</a>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="rooms.html">Rooms</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="sub-hero" style="--hero-image: url('https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?auto=format&fit=crop&w=1800&q=80')">
+        <div class="overlay"></div>
+        <div class="container animate-on-scroll">
+          <p class="eyebrow">Rooms & Suites</p>
+          <h1>Luxury Accommodation</h1>
+        </div>
+      </section>
+      <section class="section container animate-on-scroll">
+        <div class="stacked-cards">
+          <article class="room-card">
+            <h2>Deluxe Room</h2>
+            <p>A stylish sanctuary featuring king bedding, bespoke textures, and a tranquil ambiance ideal for couples and solo travelers.</p>
+            <p class="price">€420 / night</p>
+          </article>
+          <article class="room-card">
+            <h2>Lake View Suite</h2>
+            <p>Our signature suite with expansive lake-facing windows, private terrace, and curated premium amenities for elevated comfort.</p>
+            <p class="price">€760 / night</p>
+          </article>
+          <article class="room-card">
+            <h2>Junior Suite</h2>
+            <p>An elegant suite with a refined lounge area, marble bathroom, and carefully selected details inspired by Italian craftsmanship.</p>
+            <p class="price">€560 / night</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>Hotel Vista Lago · Como, Italy</p>
+        <p>© <span id="year"></span> All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

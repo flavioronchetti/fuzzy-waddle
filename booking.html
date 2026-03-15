@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking | Hotel Vista Lago</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html">Hotel Vista Lago</a><nav aria-label="Primary navigation"><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a class="active" href="booking.html">Booking</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
+    <main>
+      <section class="sub-hero" style="--hero-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1800&q=80')"><div class="overlay"></div><div class="container animate-on-scroll"><p class="eyebrow">Booking</p><h1>Reserve Your Escape</h1></div></section>
+      <section class="section container animate-on-scroll">
+        <form class="booking-form" aria-label="Reservation form">
+          <div class="form-row">
+            <label for="checkin">Check-in</label>
+            <input id="checkin" type="date" required />
+          </div>
+          <div class="form-row">
+            <label for="checkout">Check-out</label>
+            <input id="checkout" type="date" required />
+          </div>
+          <div class="form-row">
+            <label for="guests">Guests</label>
+            <select id="guests" required>
+              <option value="">Select</option>
+              <option>1 Adult</option>
+              <option>2 Adults</option>
+              <option>2 Adults, 1 Child</option>
+              <option>Family (4 Guests)</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="roomtype">Room Type</label>
+            <select id="roomtype" required>
+              <option value="">Select room</option>
+              <option>Deluxe Room</option>
+              <option>Lake View Suite</option>
+              <option>Junior Suite</option>
+            </select>
+          </div>
+          <div class="form-row full">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-row full">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <button type="submit" class="btn">Confirm Reservation Request</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-wrap"><p>Hotel Vista Lago · Como, Italy</p><p>© <span id="year"></span> All rights reserved.</p></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
