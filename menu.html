@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu | Ristorante Lago d’Oro</title>
+    <title>Menu | Ristorante Terrazza del Lago</title>
+    <meta name="description" content="Menu del Ristorante Terrazza del Lago: antipasti, primi, secondi e dolci della tradizione italiana e del Lago di Como." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:wght@400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
@@ -12,57 +13,75 @@
   <body>
     <header class="navbar">
       <div class="container nav-inner">
-        <a class="brand" href="index.html">Ristorante Lago d’Oro</a>
-        <button class="nav-toggle" aria-label="Open menu">☰</button>
+        <a class="brand" href="index.html">Ristorante Terrazza del Lago</a>
+        <button class="nav-toggle" aria-label="Apri menu">☰</button>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a class="active" href="menu.html">Menu</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="reservations.html">Reservations</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">Storia</a></li>
+          <li><a href="gallery.html">Galleria</a></li>
+          <li><a href="reservations.html">Prenotazioni</a></li>
+          <li><a href="contact.html">Contatti</a></li>
         </ul>
       </div>
     </header>
 
     <section class="page-hero">
       <div class="container reveal">
-        <h1>Our Menu</h1>
-        <p>Italian gourmet cuisine and lake fish specialties crafted with seasonal ingredients.</p>
+        <h1>Menu</h1>
+        <p>Tradizione italiana, specialità del lago e ingredienti locali selezionati con cura.</p>
       </div>
     </section>
 
     <main class="section container reveal">
-      <section class="menu-group">
+      <section class="menu-group card">
         <h2>Antipasti</h2>
-        <div class="menu-item"><span>Carpaccio di Lavarello, citrus oil, fennel</span><strong class="price">€22</strong></div>
-        <div class="menu-item"><span>Burrata d’Oro with heirloom tomatoes and basil pearls</span><strong class="price">€18</strong></div>
-        <div class="menu-item"><span>Polenta croccante with wild mushrooms and truffle foam</span><strong class="price">€19</strong></div>
+        <article class="menu-item"><div><h3>Carpaccio di trota del lago — 16€</h3><p>Delicato carpaccio preparato con trota fresca del Lago di Como, servito con olio extravergine di oliva, limone, pepe nero e un leggero tocco di erbe aromatiche. Un antipasto leggero e raffinato che esalta il sapore del pesce di lago.</p></div></article>
+        <article class="menu-item"><div><h3>Bruschette gourmet — 12€</h3><p>Pane artigianale leggermente tostato e condito con pomodorini freschi, basilico profumato, olio extravergine di oliva e una selezione di ingredienti stagionali. Un classico della cucina italiana semplice ma ricco di sapore.</p></div></article>
+        <article class="menu-item"><div><h3>Tagliere di salumi e formaggi locali — 18€</h3><p>Selezione di salumi italiani e formaggi tipici della Lombardia serviti con miele, marmellate artigianali e pane rustico. Perfetto da condividere accompagnato da un bicchiere di vino.</p></div></article>
       </section>
 
-      <section class="menu-group">
+      <section class="menu-group card">
         <h2>Primi</h2>
-        <div class="menu-item"><span>Risotto al Pesce Persico del Lago di Como</span><strong class="price">€29</strong></div>
-        <div class="menu-item"><span>Tagliolini al Limone with red prawns and pistachio</span><strong class="price">€31</strong></div>
-        <div class="menu-item"><span>Ravioli ripieni di ricotta, sage butter, toasted almonds</span><strong class="price">€25</strong></div>
+        <article class="menu-item"><div><h3>Risotto al pesce persico — 22€</h3><p>Uno dei piatti più iconici del Lago di Como. Riso cremoso cucinato lentamente e servito con filetti di pesce persico dorati nel burro e nella salvia. Un piatto elegante e delicato che rappresenta la tradizione locale.</p></div></article>
+        <article class="menu-item"><div><h3>Tagliatelle al ragù — 19€</h3><p>Tagliatelle fresche fatte in casa condite con un ricco ragù di carne cotto lentamente secondo la ricetta tradizionale italiana. Un piatto semplice ma profondamente saporito.</p></div></article>
+        <article class="menu-item"><div><h3>Ravioli ricotta e spinaci — 18€</h3><p>Pasta fresca ripiena di ricotta e spinaci, servita con burro fuso e salvia o con salsa di pomodoro leggermente speziata. Un primo piatto delicato e molto amato.</p></div></article>
       </section>
 
-      <section class="menu-group">
+      <section class="menu-group card">
         <h2>Secondi</h2>
-        <div class="menu-item"><span>Filetto di Trota salmonata, saffron cream, chicory</span><strong class="price">€34</strong></div>
-        <div class="menu-item"><span>Vitello alla Milanese with lemon herb salad</span><strong class="price">€36</strong></div>
-        <div class="menu-item"><span>Branzino in crosta di sale, seasonal vegetables</span><strong class="price">€38</strong></div>
+        <article class="menu-item"><div><h3>Filetto di manzo alla griglia — 32€</h3><p>Taglio pregiato di manzo cotto alla griglia e servito con contorno di verdure di stagione e patate arrosto. Un secondo piatto elegante e ricco di gusto.</p></div></article>
+        <article class="menu-item"><div><h3>Trota del lago al forno — 26€</h3><p>Trota fresca del Lago di Como cotta al forno con erbe aromatiche, limone e olio extravergine di oliva. Un piatto leggero e genuino che esalta i sapori del territorio.</p></div></article>
+        <article class="menu-item"><div><h3>Polpo alla griglia — 28€</h3><p>Polpo tenero grigliato e servito con crema di patate e olio extravergine di oliva. Un piatto mediterraneo dal sapore intenso.</p></div></article>
       </section>
 
-      <section class="menu-group">
-        <h2>Dessert</h2>
-        <div class="menu-item"><span>Tiramisù della Casa with single-origin cocoa</span><strong class="price">€14</strong></div>
-        <div class="menu-item"><span>Panna cotta al miele di castagno and wild berries</span><strong class="price">€13</strong></div>
-        <div class="menu-item"><span>Torta d’Oro with hazelnut and dark chocolate</span><strong class="price">€15</strong></div>
+      <section class="menu-group card">
+        <h2>Dolci</h2>
+        <article class="menu-item"><div><h3>Tiramisù della casa — 9€</h3><p>Il classico dessert italiano preparato con mascarpone fresco, savoiardi imbevuti di caffè e cacao amaro.</p></div></article>
+        <article class="menu-item"><div><h3>Panna cotta alla vaniglia — 8€</h3><p>Dessert cremoso servito con coulis di frutti di bosco freschi.</p></div></article>
+        <article class="menu-item"><div><h3>Torta al cioccolato fondente — 9€</h3><p>Torta morbida al cioccolato servita con crema alla vaniglia o gelato artigianale.</p></div></article>
       </section>
     </main>
 
-    <footer class="footer"><div class="container">© <span id="year"></span> Ristorante Lago d’Oro</div></footer>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Ristorante Terrazza del Lago</h3>
+          <p>Via Lungolario Trento 9<br />22100 Como, Italia</p>
+        </div>
+        <div>
+          <h3>Contatti</h3>
+          <p>+39 031 775 6632</p>
+        </div>
+        <div>
+          <h3>Fondazione e orari</h3>
+          <p>Fondazione: 1998
+          <br />Famiglia Ferri</p>
+          <p>Pranzo: 12:00 – 14:30<br />Cena: 19:00 – 23:00</p>
+          <p>© <span id="year"></span> Ristorante Terrazza del Lago</p>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
