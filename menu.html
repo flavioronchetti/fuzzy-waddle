@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Ristorante Lago d’Oro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:wght@400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">Ristorante Lago d’Oro</a>
+        <button class="nav-toggle" aria-label="Open menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container reveal">
+        <h1>Our Menu</h1>
+        <p>Italian gourmet cuisine and lake fish specialties crafted with seasonal ingredients.</p>
+      </div>
+    </section>
+
+    <main class="section container reveal">
+      <section class="menu-group">
+        <h2>Antipasti</h2>
+        <div class="menu-item"><span>Carpaccio di Lavarello, citrus oil, fennel</span><strong class="price">€22</strong></div>
+        <div class="menu-item"><span>Burrata d’Oro with heirloom tomatoes and basil pearls</span><strong class="price">€18</strong></div>
+        <div class="menu-item"><span>Polenta croccante with wild mushrooms and truffle foam</span><strong class="price">€19</strong></div>
+      </section>
+
+      <section class="menu-group">
+        <h2>Primi</h2>
+        <div class="menu-item"><span>Risotto al Pesce Persico del Lago di Como</span><strong class="price">€29</strong></div>
+        <div class="menu-item"><span>Tagliolini al Limone with red prawns and pistachio</span><strong class="price">€31</strong></div>
+        <div class="menu-item"><span>Ravioli ripieni di ricotta, sage butter, toasted almonds</span><strong class="price">€25</strong></div>
+      </section>
+
+      <section class="menu-group">
+        <h2>Secondi</h2>
+        <div class="menu-item"><span>Filetto di Trota salmonata, saffron cream, chicory</span><strong class="price">€34</strong></div>
+        <div class="menu-item"><span>Vitello alla Milanese with lemon herb salad</span><strong class="price">€36</strong></div>
+        <div class="menu-item"><span>Branzino in crosta di sale, seasonal vegetables</span><strong class="price">€38</strong></div>
+      </section>
+
+      <section class="menu-group">
+        <h2>Dessert</h2>
+        <div class="menu-item"><span>Tiramisù della Casa with single-origin cocoa</span><strong class="price">€14</strong></div>
+        <div class="menu-item"><span>Panna cotta al miele di castagno and wild berries</span><strong class="price">€13</strong></div>
+        <div class="menu-item"><span>Torta d’Oro with hazelnut and dark chocolate</span><strong class="price">€15</strong></div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="container">© <span id="year"></span> Ristorante Lago d’Oro</div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
