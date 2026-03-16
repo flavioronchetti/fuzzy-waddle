@@ -1,28 +1,65 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
+const postText = document.getElementById('postText');
+const publishBtn = document.getElementById('publishBtn');
+const postsContainer = document.getElementById('posts');
+const emojiButtons = document.querySelectorAll('[data-emoji]');
+const chatInput = document.getElementById('chatInput');
+const sendChat = document.getElementById('sendChat');
+const chatBox = document.getElementById('chatBox');
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+emojiButtons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    postText.value += `${btn.dataset.emoji} `;
+    postText.focus();
   });
+});
+
+function formatTime() {
+  return 'adesso';
 }
 
-const revealElements = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
+publishBtn?.addEventListener('click', () => {
+  const text = postText.value.trim();
+  if (!text) return;
 
-revealElements.forEach((el) => observer.observe(el));
+  const post = document.createElement('article');
+  post.className = 'post';
+  post.innerHTML = `
+    <div class="post-head">
+      <strong>@tuo_profilo</strong>
+      <span>${formatTime()}</span>
+    </div>
+    <p>${text}</p>
+    <div class="post-actions">
+      <button class="react">❤️ 1</button>
+      <button class="react">🔥 0</button>
+      <button class="react">😂 0</button>
+      <button>Commenta</button>
+      <button>Condividi</button>
+    </div>
+  `;
 
-const year = document.getElementById('year');
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+  postsContainer.prepend(post);
+  postText.value = '';
+});
+
+sendChat?.addEventListener('click', () => {
+  const text = chatInput.value.trim();
+  if (!text) return;
+
+  const message = document.createElement('p');
+  message.innerHTML = `<strong>Tu:</strong> ${text}`;
+  chatBox.appendChild(message);
+  chatInput.value = '';
+  chatBox.scrollTop = chatBox.scrollHeight;
+});
+
+postsContainer.addEventListener('click', (event) => {
+  const target = event.target;
+  if (!(target instanceof HTMLButtonElement) || !target.classList.contains('react')) {
+    return;
+  }
+
+  const [emoji, countValue] = target.textContent.split(' ');
+  const nextCount = Number(countValue) + 1;
+  target.textContent = `${emoji} ${nextCount}`;
+});
