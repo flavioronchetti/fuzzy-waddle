@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Villa Aurora | Boutique Hotel di Lusso sul Lago di Como</title>
+    <title>MAG Sport | Articoli sportivi ad Albavilla</title>
     <meta
       name="description"
-      content="Hotel Villa Aurora: boutique hotel di lusso sul Lago di Como. Camere eleganti, spa panoramica, ristorante gourmet e tour privati in barca in una villa storica restaurata."
+      content="MAG Sport è il negozio di fiducia per lo sport ad Albavilla: scarpe, abbigliamento, accessori, offerte stagionali e consulenza personalizzata per ogni atleta."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,215 +19,358 @@
   <body>
     <header class="navbar">
       <div class="container nav-inner">
-        <a class="brand" href="#home">Hotel Villa Aurora</a>
-        <button class="nav-toggle" aria-label="Apri menu">☰</button>
-        <ul class="nav-links">
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#camere">Camere</a></li>
-          <li><a href="#servizi">Servizi</a></li>
-          <li><a href="#recensioni">Recensioni</a></li>
-          <li><a href="#contatti">Contatti</a></li>
-        </ul>
+        <a class="brand" href="#home" aria-label="MAG Sport Home">
+          <span class="brand-mark">M</span>
+          <span>
+            <strong>MAG Sport</strong>
+            <small>Albavilla</small>
+          </span>
+        </a>
+        <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">☰</button>
+        <nav>
+          <ul class="nav-links">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#prodotti">Prodotti</a></li>
+            <li><a href="#offerte">Offerte</a></li>
+            <li><a href="#recensioni">Recensioni</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <section id="home" class="hero">
       <div class="hero-overlay"></div>
-      <div class="container hero-content reveal">
-        <p class="eyebrow">Dal 1923 • Restaurato nel 2019 • Lago di Como</p>
-        <h1>Un’esperienza di lusso sul Lago di Como</h1>
-        <p>
-          All’Hotel Villa Aurora ogni giornata inizia con il silenzio dell’acqua che si risveglia, la luce morbida del
-          mattino che entra dalle grandi finestre e il profumo del giardino che incontra la brezza del lago.
-          Qui il tempo rallenta: tra colazioni panoramiche, pomeriggi dedicati al benessere e tramonti dorati
-          riflessi sul Lago di Como, ogni istante è pensato per regalare eleganza, calma e bellezza autentica.
-        </p>
-        <p>
-          Villa Aurora è la cornice ideale per una fuga romantica, una vacanza rilassante o un soggiorno esclusivo
-          in cui vivere la magia del lago con servizi impeccabili, ambienti raffinati e un’ospitalità discreta e
-          sofisticata.
-        </p>
-        <a class="btn btn-primary" href="#camere">Scopri le camere</a>
-        <a class="btn btn-outline" href="#contatti">Prenota ora</a>
+      <div class="container hero-grid reveal visible">
+        <div class="hero-copy">
+          <p class="eyebrow">Running • Training • Teamwear • Outdoor</p>
+          <h1>MAG Sport – Il tuo negozio di fiducia per lo sport ad Albavilla</h1>
+          <p class="hero-text">
+            Un punto di riferimento per chi vive lo sport con energia, costanza e passione: scarpe tecniche,
+            abbigliamento performante, accessori selezionati e consulenza su misura per ogni disciplina.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#prodotti">Scopri i prodotti</a>
+            <a class="btn btn-outline" href="#contatti">Vieni in negozio</a>
+          </div>
+          <ul class="hero-highlights">
+            <li>Consulenza personalizzata</li>
+            <li>Brand tecnici selezionati</li>
+            <li>Offerte stagionali esclusive</li>
+          </ul>
+        </div>
+
+        <div class="hero-showcase">
+          <article class="showcase-card showcase-tall">
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80"
+              alt="Scarpe sportive tecniche in primo piano"
+            />
+          </article>
+          <article class="showcase-card">
+            <img
+              src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80"
+              alt="Atleti che si allenano in palestra"
+            />
+          </article>
+          <article class="showcase-card accent-card">
+            <div>
+              <p class="mini-label">In negozio</p>
+              <h2>Qualità, esperienza e passione sportiva</h2>
+              <p>
+                Dai runner agli sport di squadra, da chi cerca comfort quotidiano a chi vuole performance: trovi il
+                consiglio giusto, con un ambiente moderno e accogliente.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <main>
-      <section class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow dark">La storia di Villa Aurora</p>
-          <h2>Un’eleganza senza tempo affacciata sull’acqua</h2>
+      <section class="section">
+        <div class="container intro-grid reveal">
+          <div>
+            <p class="eyebrow dark">Perché scegliere MAG Sport</p>
+            <h2>Affidabilità locale, spirito dinamico e attenzione vera alle esigenze degli sportivi</h2>
+          </div>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <strong>+1000</strong>
+              <span>Articoli tecnici e lifestyle selezionati</span>
+            </article>
+            <article class="stat-card">
+              <strong>Top Brand</strong>
+              <span>Calzature, teamwear, padel, running e accessori</span>
+            </article>
+            <article class="stat-card">
+              <strong>5 giorni</strong>
+              <span>Apertura settimanale con servizio vicino al cliente</span>
+            </article>
+          </div>
         </div>
-        <p class="section-intro">
-          Villa Aurora nasce come residenza aristocratica affacciata sul Lago di Como all’inizio del Novecento.
-          Costruita da una famiglia nobile milanese che trascorreva le estati sul lago, la villa era famosa per
-          le terrazze panoramiche e i giardini sull’acqua. Dopo quasi un secolo di storia, l’edificio è stato
-          completamente restaurato nel 2019 per diventare un boutique hotel esclusivo. Oggi conserva il fascino
-          originario della villa storica, unendolo a comfort contemporanei, servizi di alta qualità e un’atmosfera
-          raffinata che rende ogni soggiorno davvero unico.
-        </p>
       </section>
 
-      <section id="camere" class="section section-soft">
+      <section id="prodotti" class="section section-soft">
         <div class="container reveal">
-          <div class="section-heading">
-            <p class="eyebrow dark">Camere & Suite</p>
-            <h2>Spazi pensati per il relax, la privacy e la bellezza del lago</h2>
+          <div class="section-heading between">
+            <div>
+              <p class="eyebrow dark">Prodotti</p>
+              <h2>Le categorie più richieste in negozio</h2>
+            </div>
+            <p class="section-intro">
+              Una selezione pensata per sportivi di ogni livello: performance, comfort e stile in un unico spazio.
+            </p>
           </div>
-          <div class="grid three-col">
-            <article class="card room-card">
+
+          <div class="product-grid">
+            <article class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80"
-                alt="Camera Deluxe elegante con letto king-size e balcone"
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80"
+                alt="Scarpe da running ad alte prestazioni"
               />
-              <h3>Camera Deluxe</h3>
-              <p class="price">da 280€ a notte</p>
-              <p>
-                Camera elegante con arredamento moderno, tonalità naturali e grandi finestre luminose con vista sui
-                giardini dell’hotel. Ideale per coppie che desiderano comfort e tranquillità in un ambiente intimo.
-                Include letto king-size, bagno in marmo, doccia walk-in, minibar e balcone privato.
-              </p>
+              <div class="product-content">
+                <span class="tag">Running</span>
+                <h3>Scarpe da running</h3>
+                <p>Modelli ammortizzati, reattivi e stabili per allenamento quotidiano, trail e gare.</p>
+              </div>
             </article>
-            <article class="card room-card">
+            <article class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
-                alt="Junior Suite spaziosa con area salotto separata"
+                src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1200&q=80"
+                alt="Abbigliamento tecnico sportivo piegato"
               />
-              <h3>Junior Suite</h3>
-              <p class="price">da 380€ a notte</p>
-              <p>
-                Suite spaziosa e luminosa con area salotto separata, dettagli sartoriali e grandi aperture
-                panoramiche. Perfetta per chi desidera più spazio e un’esperienza di soggiorno superiore, con
-                ambienti raffinati pensati per vivere il lago con assoluta armonia.
-              </p>
+              <div class="product-content">
+                <span class="tag">Teamwear</span>
+                <h3>Abbigliamento tecnico</h3>
+                <p>Maglie, giacche, shorts e capi termici per allenamento, gara e tempo libero.</p>
+              </div>
             </article>
-            <article class="card room-card">
+            <article class="product-card">
               <img
-                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
-                alt="Suite Vista Lago con terrazza privata panoramica"
+                src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?auto=format&fit=crop&w=1200&q=80"
+                alt="Accessori sportivi con palloni e racchette"
               />
-              <h3>Suite Vista Lago</h3>
-              <p class="price">da 520€ a notte</p>
-              <p>
-                La suite più esclusiva dell’hotel, con ampia terrazza privata affacciata direttamente sul Lago di
-                Como. Arredi eleganti, materiali pregiati e vista mozzafiato creano l’atmosfera perfetta per
-                soggiorni romantici o occasioni speciali da ricordare.
-              </p>
+              <div class="product-content">
+                <span class="tag">Accessori</span>
+                <h3>Accessori e attrezzatura</h3>
+                <p>Zaini, palloni, racchette, borracce e dettagli indispensabili per ogni sportivo.</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=1200&q=80"
+                alt="Sportivo che sceglie una scarpa in negozio"
+              />
+              <div class="product-content">
+                <span class="tag">Consulenza</span>
+                <h3>Scelta guidata in negozio</h3>
+                <p>Supporto dedicato per trovare la soluzione ideale in base a sport, obiettivi e comfort.</p>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="servizi" class="section container reveal">
-        <div class="section-heading">
-          <p class="eyebrow dark">Servizi esclusivi</p>
-          <h2>Benessere, gusto e momenti memorabili</h2>
-        </div>
-        <div class="grid two-col services-grid">
-          <article class="card service-card">
-            <img
-              src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80"
-              alt="Spa panoramica elegante con vista sul Lago di Como"
-            />
-            <h3>Spa panoramica</h3>
-            <p>
-              Una spa elegante con vista sul lago dove ritrovare equilibrio e serenità. Gli ospiti possono rilassarsi
-              in sauna, bagno turco e area relax mentre osservano il panorama del Lago di Como. Sono disponibili
-              massaggi e trattamenti benessere realizzati con prodotti naturali selezionati.
-            </p>
-          </article>
-          <article class="card service-card">
-            <img
-              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80"
-              alt="Ristorante gourmet con tavoli eleganti e vista lago"
-            />
-            <h3>Ristorante gourmet</h3>
-            <p>
-              Il ristorante propone una cucina italiana raffinata con ingredienti locali e stagionali. Gli ospiti
-              possono cenare nella sala panoramica o sulla terrazza esterna vista lago, vivendo un’esperienza
-              gastronomica elegante, romantica e profondamente legata al territorio.
-            </p>
-          </article>
-          <article class="card service-card">
-            <img
-              src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1200&q=80"
-              alt="Terrazza sul lago al tramonto con atmosfera rilassante"
-            />
-            <h3>Terrazza sul lago</h3>
-            <p>
-              La grande terrazza panoramica è uno degli spazi più amati dell’hotel. Qui gli ospiti possono gustare
-              un aperitivo al tramonto, leggere un libro o semplicemente ammirare il paesaggio in un ambiente
-              tranquillo e raffinato, dove il lago diventa protagonista.
-            </p>
-          </article>
-          <article class="card service-card">
-            <img
-              src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80"
-              alt="Tour privato in barca sul Lago di Como"
-            />
-            <h3>Tour privati in barca</h3>
-            <p>
-              L’hotel organizza escursioni private in barca sul Lago di Como per scoprire ville storiche, piccoli
-              borghi e scorci naturali unici. Ogni tour è guidato e personalizzabile per offrire agli ospiti
-              un’esperienza intima, esclusiva e indimenticabile.
-            </p>
-          </article>
+      <section id="offerte" class="section offers-section">
+        <div class="container reveal">
+          <div class="section-heading between">
+            <div>
+              <p class="eyebrow dark">Offerte</p>
+              <h2>Promozioni che fanno correre la convenienza</h2>
+            </div>
+            <a class="btn btn-secondary" href="#contatti">Chiedi disponibilità</a>
+          </div>
+          <div class="offers-grid">
+            <article class="offer-card featured">
+              <span class="discount">-30%</span>
+              <h3>Running Selection</h3>
+              <p>Su una selezione di scarpe tecniche per corsa su strada e allenamenti intensivi.</p>
+              <strong>Valida fino a esaurimento scorte</strong>
+            </article>
+            <article class="offer-card">
+              <span class="discount">2x1</span>
+              <h3>Calze tecniche</h3>
+              <p>Più comfort e supporto per i tuoi allenamenti con una promo perfetta per la stagione.</p>
+            </article>
+            <article class="offer-card">
+              <span class="discount">-20%</span>
+              <h3>Teamwear club</h3>
+              <p>Sconto su kit squadra, felpe e abbigliamento coordinato per società sportive e gruppi.</p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section id="recensioni" class="section section-soft">
         <div class="container reveal">
-          <div class="section-heading">
-            <p class="eyebrow dark">Recensioni</p>
-            <h2>Le emozioni raccontate dai nostri ospiti</h2>
+          <div class="section-heading between">
+            <div>
+              <p class="eyebrow dark">Recensioni clienti</p>
+              <h2>Cosa dicono gli sportivi che scelgono MAG Sport</h2>
+            </div>
+            <p class="section-intro">Esperienze simulate per mostrare il tono e il posizionamento del negozio.</p>
           </div>
-          <div class="grid three-col">
-            <article class="card testimonial">
-              <p class="stars">★★★★★</p>
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="review-top">
+                <strong>Marco R.</strong>
+                <span class="stars" aria-label="5 stelle">★★★★★</span>
+              </div>
               <p>
-                “Uno degli hotel più belli in cui abbiamo soggiornato. Vista spettacolare sul Lago di Como e
-                servizio impeccabile.”
+                Ottimo negozio: mi hanno consigliato le scarpe giuste per ricominciare a correre e la differenza si
+                sente davvero già dai primi chilometri.
               </p>
-              <strong>— Sarah M., Londra</strong>
             </article>
-            <article class="card testimonial">
-              <p class="stars">★★★★★</p>
+            <article class="review-card">
+              <div class="review-top">
+                <strong>Elena P.</strong>
+                <span class="stars" aria-label="5 stelle">★★★★★</span>
+              </div>
               <p>
-                “Villa Aurora è semplicemente perfetta. Camere eleganti, ristorante eccellente e personale molto
-                attento.”
+                Ambiente curato, prodotti tecnici ben scelti e personale disponibile. Finalmente un punto di riferimento
+                serio vicino ad Albavilla.
               </p>
-              <strong>— Thomas K., Berlino</strong>
             </article>
-            <article class="card testimonial">
-              <p class="stars">★★★★★</p>
+            <article class="review-card">
+              <div class="review-top">
+                <strong>Luca T.</strong>
+                <span class="stars" aria-label="4 stelle">★★★★☆</span>
+              </div>
               <p>
-                “Un soggiorno indimenticabile. La terrazza sul lago al tramonto è qualcosa di magico.”
+                Ho trovato abbigliamento perfetto per allenamento e tempo libero. Buon assortimento e offerte molto
+                interessanti durante il cambio stagione.
               </p>
-              <strong>— Andrea F., Milano</strong>
             </article>
+            <article class="review-card">
+              <div class="review-top">
+                <strong>Giulia M.</strong>
+                <span class="stars" aria-label="5 stelle">★★★★★</span>
+              </div>
+              <p>
+                Mi piace perché unisce qualità e attenzione al cliente. Ti seguono nella scelta e ti fanno sentire in
+                mani esperte, senza fretta.
+              </p>
+            </article>
+            <article class="review-card">
+              <div class="review-top">
+                <strong>Davide C.</strong>
+                <span class="stars" aria-label="5 stelle">★★★★★</span>
+              </div>
+              <p>
+                Negozio ben organizzato, ideale anche per chi cerca articoli per padel e sport di squadra. Tornerò di
+                sicuro per i prossimi acquisti.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contatti" class="section contact-section">
+        <div class="container contact-grid reveal">
+          <div class="contact-copy">
+            <p class="eyebrow dark">Contatti</p>
+            <h2>Passa in negozio o scrivici rapidamente</h2>
+            <div class="contact-cards">
+              <article class="info-card">
+                <h3>Vieni a trovarci</h3>
+                <p>Via Don Felice Ballabio, 7<br />22031 Albavilla (CO), Italia</p>
+              </article>
+              <article class="info-card">
+                <h3>Recapiti</h3>
+                <p>
+                  <a href="tel:+393280139023">328 013 9023</a><br />
+                  <a href="mailto:info@magsportalbavilla.it">info@magsportalbavilla.it</a>
+                </p>
+              </article>
+              <article class="info-card">
+                <h3>Orari di apertura</h3>
+                <p>
+                  Lunedì–Venerdì: 09:00–12:30 / 15:00–19:30<br />
+                  Sabato: 09:00–12:30 / 15:00–18:30<br />
+                  Domenica: chiuso
+                </p>
+              </article>
+            </div>
+
+            <form class="contact-form">
+              <div class="form-row">
+                <label>
+                  Nome
+                  <input type="text" name="name" placeholder="Il tuo nome" />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="La tua email" />
+                </label>
+              </div>
+              <label>
+                Messaggio
+                <textarea name="message" rows="5" placeholder="Come possiamo aiutarti?"></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Invia</button>
+            </form>
+          </div>
+
+          <div class="map-panel">
+            <div class="map-frame">
+              <iframe
+                title="Mappa MAG Sport Albavilla"
+                src="https://www.google.com/maps?q=Via%20Don%20Felice%20Ballabio%2C%207%2C%2022031%20Albavilla%20CO&z=16&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="map-note">
+              <strong>Facile da raggiungere</strong>
+              <p>Parcheggi nelle vicinanze e posizione comoda per chi arriva da Albavilla, Erba e zona Como.</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer id="contatti" class="footer">
+    <footer class="footer">
       <div class="container footer-grid">
         <div>
-          <h3>Hotel Villa Aurora</h3>
-          <p>Lungolago Mafalda di Savoia 6<br />22100 Como, Italia</p>
-          <p><strong>Fondazione:</strong> 1923<br /><strong>Restaurato:</strong> 2019</p>
+          <a class="brand footer-brand" href="#home">
+            <span class="brand-mark">M</span>
+            <span>
+              <strong>MAG Sport</strong>
+              <small>Articoli sportivi ad Albavilla</small>
+            </span>
+          </a>
+          <p>Energia, affidabilità e passione per accompagnare ogni allenamento, ogni sfida, ogni obiettivo.</p>
         </div>
         <div>
-          <h3>Contatti</h3>
-          <p><strong>Telefono:</strong> +39 031 998 4455</p>
-          <p><strong>Email:</strong> booking@villaauroracomo.it</p>
+          <h3>Link rapidi</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#prodotti">Prodotti</a></li>
+            <li><a href="#offerte">Offerte</a></li>
+            <li><a href="#recensioni">Recensioni</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+          </ul>
         </div>
         <div>
-          <h3>Informazioni soggiorno</h3>
-          <p><strong>Check-in:</strong> 15:00</p>
-          <p><strong>Check-out:</strong> 11:00</p>
-          <p>© <span id="year"></span> Hotel Villa Aurora</p>
+          <h3>Seguici</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer">Facebook</a></li>
+          </ul>
         </div>
+        <div>
+          <h3>Recapiti</h3>
+          <p>
+            Via Don Felice Ballabio, 7, 22031 Albavilla (CO)<br />
+            Tel: <a href="tel:+393280139023">328 013 9023</a><br />
+            Email: <a href="mailto:info@magsportalbavilla.it">info@magsportalbavilla.it</a>
+          </p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> MAG Sport. Tutti i diritti riservati.</p>
       </div>
     </footer>
 
